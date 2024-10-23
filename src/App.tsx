@@ -20,7 +20,7 @@ function App() {
           <div 
             className="h-full w-full"
             style={{
-              background: `url(/star1.png)`,
+              background: `url(/portofolio/star1.png)`,
               backgroundSize: 'cover',
             }}
           />
@@ -34,7 +34,7 @@ function App() {
           <div 
             className="h-full w-full"
             style={{
-              background: `url(/star2.png)`,
+              background: `url(/portofolio/star2.png)`,
               backgroundSize: 'cover',
             }}
           />
@@ -59,7 +59,7 @@ function App() {
             </div>
             <div className='w-1/2 relative'>
               <img 
-                src="/astronot.png" 
+                src="/portofolio/astronot.png" 
                 className='absolute right-0 h-full object-cover'
                 alt="Astronaut" 
               />
@@ -110,8 +110,8 @@ function App() {
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
                 <h1 className='text-4xl text-white font-bold'>Javascript & Typescript</h1>
                 <div className='flex flex-row gap-5'>
-                  <img src="/javascript.svg" style={{width: '50%', height: '50%'}} alt="" />
-                  <img src="/typescript.svg" style={{width: '50%', height: '50%'}} alt="" />
+                  <img src="/portofolio/javascript.svg" style={{width: '50%', height: '50%'}} alt="" />
+                  <img src="/portofolio/typescript.svg" style={{width: '50%', height: '50%'}} alt="" />
                 </div>
               </div>
             </div>
@@ -128,8 +128,8 @@ function App() {
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
                 <h1 className='text-4xl text-white font-bold'>Svelte & React</h1>
                 <div className='flex flex-row gap-5'>
-                  <img src="/svelte.svg" style={{width: '50%', height: '50%'}} alt="" />
-                  <img src="/react.svg" style={{width: '50%', height: '50%'}} alt="" />
+                  <img src="/portofolio/svelte.svg" style={{width: '50%', height: '50%'}} alt="" />
+                  <img src="/portofolio/react.svg" style={{width: '50%', height: '50%'}} alt="" />
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ function App() {
             <div className='flex justify-end'>
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
                 <h1 className='text-4xl text-white font-bold'>Tailwind CSS</h1>
-                <img src="/tailwind.svg" style={{width: '50%', height: '50%'}} alt="" />
+                <img src="/portofolio/tailwind.svg" style={{width: '50%', height: '50%'}} alt="" />
               </div>
             </div>
           </ComponentSlider>
