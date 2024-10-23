@@ -10,7 +10,7 @@ const ComponentSlider: React.FC<IComponentSlider> = ({
  }) => {
   const controls = useAnimation();
   const ref = React.useRef(null);
-  const inView = useInView(ref, { once: false }); 
+  const inView = useInView(ref, { once: true }); 
 
   
   const scale = useMotionValue(0.8);
