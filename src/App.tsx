@@ -4,7 +4,7 @@ import ComponentSlider from './components/Framer/ComponentSlider'
 function App() {
   return (
     <div className='bg-[#012200] min-h-screen'>
-      <Parallax pages={5} style={{ top: '0', left: '0' }}>
+      <Parallax pages={10} style={{ top: '0', left: '0' }}>
         <ParallaxLayer
           offset={0}
           speed={0.1}
@@ -87,6 +87,8 @@ function App() {
           className='bg-gradient-to-b from-[#012200] via-[#05220f] to-[#3b643c]'
         />
 
+        {/* Front End */}
+          
         <ParallaxLayer
           offset={1.5}
           speed={0.5}
@@ -108,10 +110,24 @@ function App() {
           <ComponentSlider>
             <div className='flex justify-end'>
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
-                <h1 className='text-4xl text-white font-bold'>Javascript & Typescript</h1>
-                <div className='flex flex-row gap-5'>
-                  <img src="/portofolio/javascript.svg" style={{width: '50%', height: '50%'}} alt="" />
-                  <img src="/portofolio/typescript.svg" style={{width: '50%', height: '50%'}} alt="" />
+                <h1 className='text-4xl text-white font-bold'>Languages</h1>
+                <div className='grid grid-cols-2 gap-5 items-center justify-center'>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Javascript</h1>
+                    <img src="/portofolio/javascript.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Typescript</h1>
+                    <img src="/portofolio/typescript.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Node JS</h1>
+                    <img src="/portofolio/nodejs.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>PHP</h1>
+                    <img src="/portofolio/php.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,17 +135,31 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={2.8}
+          offset={2.75}
           speed={0.5}
           factor={0.5}
         >
           <ComponentSlider>
             <div className='flex justify-end'>
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
-                <h1 className='text-4xl text-white font-bold'>Svelte & React</h1>
-                <div className='flex flex-row gap-5'>
-                  <img src="/portofolio/svelte.svg" style={{width: '50%', height: '50%'}} alt="" />
-                  <img src="/portofolio/react.svg" style={{width: '50%', height: '50%'}} alt="" />
+                <h1 className='text-4xl text-white font-bold'>Framework</h1>
+                <div className='grid grid-cols-2 gap-3 items-center justify-center'>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>React</h1>
+                    <img src="/portofolio/react.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Vue JS</h1>
+                    <img src="/portofolio/vue.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Svelte</h1>
+                    <img src="/portofolio/svelte.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Laravel</h1>
+                    <img src="/portofolio/laravel.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -145,11 +175,200 @@ function App() {
             <div className='flex justify-end'>
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
                 <h1 className='text-4xl text-white font-bold'>Tailwind CSS</h1>
-                <img src="/portofolio/tailwind.svg" style={{width: '50%', height: '50%'}} alt="" />
+                <div className='grid grid-cols-2 gap-3 items-center justify-center'>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>CSS</h1>
+                    <img src="/portofolio/css.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Tailwind CSS</h1>
+                    <img src="/portofolio/tailwind.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </ComponentSlider>
         </ParallaxLayer>
+
+
+
+        <ParallaxLayer
+          offset={5.5}
+          speed={0.1}
+          factor={2}
+          className='bg-gradient-to-b from-[#3b643c] via-[#05220f] to-[#012200]'
+        />
+
+        {/* Back End */}
+          
+        <ParallaxLayer
+          speed={0.5}
+          sticky={{start: 3.5, end: 6.5}}
+        >
+          <div className="w-full flex items-center h-full justify-end">
+            <h1 className="text-white text-4xl font-bold px-8">
+              This is my Back End - Tech Stack
+            </h1>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={4}
+          speed={0.5}
+          factor={0.5}
+        >
+          <ComponentSlider>
+            <div className='flex justify-start'>
+              <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
+                <h1 className='text-4xl text-white font-bold'>Languages</h1>
+                <div className='grid grid-cols-2 gap-3 items-center justify-center'>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Java</h1>
+                    <img src="/portofolio/java.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Go Language</h1>
+                    <div className='p-5 flex justify-center'>
+                      <img src="/portofolio/golang.svg" className='bg-white rounded-xl p-6' style={{width: '50%', height: '50%'}} alt="" />
+                    </div>
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Node JS</h1>
+                    <img src="/portofolio/nodejs.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>PHP</h1>
+                    <img src="/portofolio/php.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Python</h1>
+                    <img src="/portofolio/python.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ComponentSlider>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={5}
+          speed={0.5}
+          factor={0.5}
+        >
+          <ComponentSlider>
+            <div className='flex justify-start'>
+              <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
+                <h1 className='text-4xl text-white font-bold'>Framework</h1>
+                <div className='grid grid-cols-2 gap-8 items-center justify-center'>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Fast API</h1>
+                    <img src="/portofolio/fastapi.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Express JS</h1>
+                    <div className='p-5 flex justify-center'>
+                      <img src="/portofolio/express.svg" className='bg-white rounded-xl p-6' style={{width: '60%', height: '60%'}} alt="" />
+                    </div>
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Flask</h1>
+                    <div className='p-5 flex justify-center'>
+                      <img src="/portofolio/flask.svg" className='bg-white rounded-xl p-6' style={{width: '50%', height: '50%'}} alt="" />
+                    </div>
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Laravel</h1>
+                    <img src="/portofolio/laravel.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Go</h1>
+                    <div className='p-5 flex justify-center'>
+                      <img src="/portofolio/golang.svg" className='bg-white rounded-xl p-6' style={{width: '50%', height: '50%'}} alt="" />
+                    </div>
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Spring Boot</h1>
+                    <img src="/portofolio/spring.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ComponentSlider>
+        </ParallaxLayer>
+
+
+        <ParallaxLayer
+          offset={6}
+          speed={0.5}
+          factor={0.5}
+        >
+          <ComponentSlider>
+            <div className='flex justify-start'>
+              <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
+                <h1 className='text-4xl text-white font-bold'>Databases</h1>
+                <div className='grid grid-cols-2 gap-8 items-center justify-center'>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>MySql</h1>
+                    <img src="/portofolio/mysql.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>PostgreSql</h1>
+                    <img src="/portofolio/postgre.svg" style={{width: '60%', height: '60%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Mongo DB</h1>
+                    <img src="/portofolio/mongo.svg"  style={{width: '50%', height: '50%'}} alt="" />
+                    <div className='p-5 flex justify-center'>
+                    </div>
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Redis</h1>
+                    <img src="/portofolio/redis.svg" style={{width: '40%', height: '40%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Maria DB</h1>
+                    <img src="/portofolio/mariadb.svg"  style={{width: '50%', height: '50%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-1 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Sql Server</h1>
+                    <div className='p-5 flex justify-center'>
+                      <img src="/portofolio/sqlserver.svg" className='bg-white rounded-xl p-6' style={{width: '60%', height: '60%'}} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ComponentSlider>
+        </ParallaxLayer>
+
+        {/* <ParallaxLayer
+          offset={5.5}
+          speed={0.5}
+          factor={0.5}
+        >
+          <ComponentSlider>
+            <div className='flex justify-start'>
+              <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
+                <h1 className='text-4xl text-white font-bold'>Tailwind CSS</h1>
+                <div className='flex flex-row gap-3 items-center justify-center'>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>CSS</h1>
+                    <img src="/portofolio/css.svg" style={{width: '50%', height: '50%'}} alt="" />
+                  </div>
+                  <div className='flex flex-col gap-2 justify-center items-center'>
+                    <h1 className='text-2xl text-white font-bold'>Tailwind CSS</h1>
+                    <img src="/portofolio/tailwind.svg" style={{width: '50%', height: '50%'}} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ComponentSlider>
+        </ParallaxLayer> */}
+
+
+
+
+        {/* Work Experience */}
 
         {/* <ParallaxLayer
           offset={1.5}
