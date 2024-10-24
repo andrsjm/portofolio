@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView, useMotionValue, useTransform } from 'framer-motion';
 
 interface IComponentSlider{
@@ -9,15 +9,14 @@ const ComponentSlider: React.FC<IComponentSlider> = ({
     children
  }) => {
   const controls = useAnimation();
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const inView = useInView(ref, { once: true }); 
 
   
   const scale = useMotionValue(0.8);
   const opacity = useTransform(scale, [0.8, 1], [0, 1]);
 
-  React.useEffect(() => {
-    
+  useEffect(() => {
     if (inView) {
       controls.start({
         scale: 1,
