@@ -27,6 +27,7 @@ function App() {
         </ParallaxLayer>
         
         <ParallaxLayer
+          className='h-full w-full animate-scroll-right'
           offset={0}
           speed={0.3}
           factor={2}
@@ -40,10 +41,9 @@ function App() {
           />
         </ParallaxLayer>
 
-        {/* Hero Content */}
         <ParallaxLayer
           offset={0}
-          speed={0.4}
+          speed={1}
         >
           <div className='flex flex-row justify-between h-screen'>
             <div className='flex flex-col gap-3 w-1/2 justify-center items-center'>
@@ -57,6 +57,13 @@ function App() {
                 </h1>
               </div>
             </div>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={0}
+          speed={0.5}
+        >
+          <div className='flex flex-row justify-end h-screen'>
             <div className='w-1/2 relative'>
               <img 
                 src="/astronot.png" 
@@ -67,7 +74,7 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        {/* Full Stack Developer Section (Page 2) */}
+        {/* Full Stack Developer Section */}
         <ParallaxLayer
           offset={1}
           speed={0.5}
@@ -174,7 +181,7 @@ function App() {
           <ComponentSlider>
             <div className='flex justify-end'>
               <div className='w-1/2 flex flex-col gap-10 justify-center items-center'>
-                <h1 className='text-4xl text-white font-bold'>Tailwind CSS</h1>
+                <h1 className='text-4xl text-white font-bold'>Styling</h1>
                 <div className='grid grid-cols-2 gap-3 items-center justify-center'>
                   <div className='flex flex-col gap-2 justify-center items-center'>
                     <h1 className='text-2xl text-white font-bold'>CSS</h1>
@@ -193,7 +200,7 @@ function App() {
 
 
         <ParallaxLayer
-          offset={5.5}
+          offset={5.7}
           speed={0.1}
           factor={2}
           className='bg-gradient-to-b from-[#3b643c] via-[#05220f] to-[#012200]'
